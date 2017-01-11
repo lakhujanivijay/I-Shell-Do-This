@@ -33,5 +33,5 @@ The program outputs the following statistical elements:
 
 Before running the script, download and keep seqkit file in the same directory containing the assembly fasta file and this shell script. You can download seqkit [here](https://github.com/shenwei356/seqkit/releases).
 
-Dependencies:
+# Dependencies:
 [seqkit](https://github.com/shenwei356/seqkit)
