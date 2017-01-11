@@ -1,3 +1,5 @@
+# About the program
+
 This shell script exploits the ultra-fast fasta manipulation tool called [seqkit](http://www.biocodes.org/thread.php?id=15).As arguments, the script takes the assembly file in fasta format.
 
 The program outputs the following statistical elements:
@@ -23,3 +25,13 @@ The program outputs the following statistical elements:
 #### Max scaffold size: Length of the longest scaffold
 
 #### Min scaffold size: Length of the smallest scaffold
+
+# Usage:
+`assembly_stats.sh <assembly.fasta>`
+
+# NOTE:
+
+Before running the script, download and keep seqkit file in the same directory containing the assembly fasta file and this shell script. You can download seqkit [here](https://github.com/shenwei356/seqkit/releases).
+
+Dependencies:
+[seqkit](https://github.com/shenwei356/seqkit)
