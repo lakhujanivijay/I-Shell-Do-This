@@ -1,3 +1,6 @@
+# Author: Vijay Lakhujani
+# Date: 10 Apr 2017
+
 total_files=`find -name '*.gz' | wc -l`
 arr=( $(ls *.gz) )
 
@@ -35,9 +38,9 @@ cd "$sample_name-$k"
 
 if [ $k -le 63 ]
 then
-   date && time /opt/app/SOAPdenovo2/SOAPdenovo-63mer all -s ../$j -K $k -p 60 -F -R -o "$sample_name-$k" 1> "$sample_name-$k".log 2>"$sample_name-$k".err
+   date && time SOAPdenovo2/SOAPdenovo-63mer all -s ../$j -K $k -p 60 -F -R -o "$sample_name-$k" 1> "$sample_name-$k".log 2>"$sample_name-$k".err
 else
-   date && time /opt/app/SOAPdenovo2/SOAPdenovo-127mer all -s ../$j -K $k -p 60 -F -R -o "$sample_name-$k" 1> "$sample_name-$k".log 2>"$sample_name-$k".err
+   date && time SOAPdenovo2/SOAPdenovo-127mer all -s ../$j -K $k -p 60 -F -R -o "$sample_name-$k" 1> "$sample_name-$k".log 2>"$sample_name-$k".err
 fi
 cd ..
 }
