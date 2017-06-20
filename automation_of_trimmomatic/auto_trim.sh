@@ -1,3 +1,30 @@
+#!bin/bash
+
+# Shell script to automate trimmomatic for multiple samples
+# Author = Vijay Lakhujani
+# Date = 20 June 2017
+
+# Usage
+# This script automates running trimmomatic for multiple PE data.
+# Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
+
+# Execution
+# Case(1) run on a couple of PE files with extension *.fq
+# $ sh auto_trim.sh *.fq
+
+# Case(2) run on a couple of PE files with extension *.fq.gz
+# $ sh auto_trim.sh *.fq.gz
+
+# Case(3) run on a all the fastq files in the current directory (mixed extensions, like .fq. .fastq )
+# $ sh auto_trim.sh *
+
+# Invoke help
+# $ sh auto_trim.sh -h
+# $ sh auto_trim.sh --help
+# Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
+
+
+
 red=`tput setaf 1`
 green=`tput setaf 2`
 yellow=`tput setaf 3`
@@ -83,5 +110,3 @@ else
         fi
   done
 fi
-
-
