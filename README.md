@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: https://career.guru99.com/wp-content/uploads/2012/06/Shell.jpg "Linux logo"
+[logo]: http://hanoo.org/images/icons/linux.png "Linux logo"
 
 
 
