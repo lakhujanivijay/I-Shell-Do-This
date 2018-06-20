@@ -1,6 +1,7 @@
 
 
-### Hi ![alt text](http://hanoo.org/images/icons/linux.png "Linux logo") 
+### Hi..!! ![alt text](http://hanoo.org/images/icons/linux.png "Linux logo") 
+------
 
 This is my growing repository of `shell` scripts to automate day-today activities of a NGS data analyst.
 
