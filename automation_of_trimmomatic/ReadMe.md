@@ -9,9 +9,9 @@ Read the manual [here](http://www.usadellab.org/cms/?page=trimmomatic)
 
 The script can be used for running trimmomatic automatically for N no.of samples regardless of the file extension. Please go through the email (though, it's a bit long!) to understand the functionalities, usage and reasons for failure.
 
-- [x] This script is directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
-- [x] Obviously, it will save a lot of time as trimming is one of the routine tasks and it ought to be automated.
-- [x] It is robust and intuitive and errors while execution (if any) are self-explanatory as explained below.
+- This script is directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
+- Obviously, it will save a lot of time as trimming is one of the routine tasks and it ought to be automated.
+- It is robust and intuitive and errors while execution (if any) are self-explanatory as explained below.
 
 #### Using the script:
 
@@ -72,3 +72,13 @@ FileNotFoundError: No such file with extension *.fq found!
 Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
 ```
 
+- Fastq file names do not have R1 - R2 naming conventions.
+ Say if you have files like these - demo_1.fq, demo_2.fq, the script will fail:
+```
+[mypc]$ sh auto_trimmomatic.sh *.fq
+
+Filename Error: Paired end file names should contain _R1 _R2
+Example: test_R1.fq.gz, test_R2.fq.gz
+```
+
+####  Rename the fastq files as demo_R1.fq, demo_R2.fq. This checkpoint was essential to maintain integrity of the script.
