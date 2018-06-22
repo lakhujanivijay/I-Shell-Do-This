@@ -72,8 +72,8 @@ FileNotFoundError: No such file with extension *.fq found!
 Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
 ```
 
-- Fastq file names do not have R1 - R2 naming conventions.
- Say if you have files like these - demo_1.fq, demo_2.fq, the script will fail:
+- Fastq file names do not have `R1 - R2` naming conventions.
+ Say if you have files like these - `demo_1.fq`, `demo_2.fq`, the script will fail:
 ```
 [mypc]$ sh auto_trimmomatic.sh *.fq
 
@@ -81,4 +81,4 @@ Filename Error: Paired end file names should contain _R1 _R2
 Example: test_R1.fq.gz, test_R2.fq.gz
 ```
 
-####  Rename the fastq files as demo_R1.fq, demo_R2.fq. This checkpoint was essential to maintain integrity of the script.
+#####  _Rename the fastq files as `demo_R1.fq`, `demo_R2.fq`. This checkpoint was essential to maintain integrity of the script._
