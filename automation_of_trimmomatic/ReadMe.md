@@ -62,7 +62,7 @@ Consider you have a directory with a mixture of fastq files with different file 
 
 `$ sh auto_trimmomatic.sh -h`
 
-#### :bangbang: Error handling
+#### :interrobang: Error handling
 
 - No parameters passed to script
 ```
