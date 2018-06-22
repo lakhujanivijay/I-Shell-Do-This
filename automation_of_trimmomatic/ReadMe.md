@@ -7,9 +7,13 @@
 
 For details, read the manual [here](http://www.usadellab.org/cms/?page=trimmomatic)
 
+----
+
 #### About the script
 
-The script can be used for running trimmomatic automatically for N no.of samples regardless of the file extension. Please go through the email (though, it's a bit long!) to understand the functionalities, usage and reasons for failure.
+The script can be used for running trimmomatic automatically for `N` no.of samples regardless of the file extension. Read below to understand the functionalities, usage and reasons for failure.
+
+#### Why should one use this?
 
 - This script is directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
 - Obviously, it will save a lot of time as trimming is one of the routine tasks and it ought to be automated.
