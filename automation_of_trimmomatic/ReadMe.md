@@ -3,7 +3,7 @@
 ---
 
 #### What is Trimmomatic?
-Trimmomatic is a fast, multithreaded command line tool that can be used to trim and crop Illumina (FASTQ) data as well as to remove adapters. These adapters can pose a real problem depending on the library preparation and downstream application.
+[**Trimmomatic**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4103590/) is a fast, multithreaded command line tool that can be used to trim and crop Illumina (FASTQ) data as well as to remove adapters. These adapters can pose a real problem depending on the library preparation and downstream application.
 
 For details, read the manual [here](http://www.usadellab.org/cms/?page=trimmomatic)
 
