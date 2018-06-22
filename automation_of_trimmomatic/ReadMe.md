@@ -9,17 +9,17 @@ For details, read the manual [here](http://www.usadellab.org/cms/?page=trimmomat
 
 ----
 
-#### About the script
+#### :scissors: About the script
 
 The script can be used for running trimmomatic automatically for `N` no.of samples regardless of the file extension. Read below to understand the functionalities, usage and reasons for failure.
 
-#### Why should one use this?  
+#### :triangular_flag_on_post: Why should one use this?  
 
 - This script is directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
 - Obviously, it will save a lot of time as trimming is one of the routine tasks and it ought to be automated.
 - It is robust and intuitive and errors while execution (if any) are self-explanatory as explained below.
 
-#### Using the script:
+#### :wrench: Using the script: 
 
 Consider you have a directory with a mixture of fastq files with different file extensions
 
@@ -56,13 +56,13 @@ Consider you have a directory with a mixture of fastq files with different file 
 
   `$ sh auto_trimmomatic.sh *`
 
-#### Invoking help
+#### :information_source: Invoking help
 
 `$ sh auto_trimmomatic.sh --help` OR
 
 `$ sh auto_trimmomatic.sh -h`
 
-#### Error handling
+#### :bangbang: Error handling
 
 - No parameters passed to script
 ```
