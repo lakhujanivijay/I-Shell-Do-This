@@ -1,5 +1,7 @@
 ### Automation of trimmomatic
 
+---
+
 #### What is Trimmomatic?
 Read the manual [here](http://www.usadellab.org/cms/?page=trimmomatic)
 
@@ -48,3 +50,25 @@ Consider you have a directory with a mixture of fastq files with different file 
 `$ sh auto_trimmomatic.sh --help` OR
 
 `$ sh auto_trimmomatic.sh -h`
+
+#### Error handling
+
+- No parameters passed to script
+```
+[mypc]$ sh auto_trimmomatic.sh 
+Error: No parameter(s) provided
+Usage: sh auto_trim [*.extension]
+       extension: <fq> or <fastq> or <fq.gz> or <fastq.gz> or <*>
+       example: sh auto_trim.sh *.fq.gz or sh auto_trim.sh *
+ 
+Help:  sh auto_trimmomatic.sh -h or --help
+```
+
+- No files in the directory with user provided extension
+```
+[mypc]$ sh auto_trimmomatic.sh *.fq
+
+FileNotFoundError: No such file with extension *.fq found!
+Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
+```
+
