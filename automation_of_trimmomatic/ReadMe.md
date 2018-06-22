@@ -62,7 +62,7 @@ Consider you have a directory with a mixture of fastq files with different file 
 
 `$ sh auto_trimmomatic.sh -h`
 
-#### :interrobang: Error handling
+#### :warning: Error handling
 
 - No parameters passed to script
 ```
@@ -92,4 +92,4 @@ Filename Error: Paired end file names should contain _R1 _R2
 Example: test_R1.fq.gz, test_R2.fq.gz
 ```
 
-#####  _Rename the fastq files as `demo_R1.fq`, `demo_R2.fq`. This checkpoint was essential to maintain integrity of the script._
+##### :information_source: _Rename the fastq files as `demo_R1.fq`, `demo_R2.fq`. This checkpoint was essential to maintain integrity of the script._
