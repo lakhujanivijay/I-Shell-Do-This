@@ -28,22 +28,22 @@ Consider you have a directory with a mixture of fastq files with different file 
     |-- make_2_R2.fastq.gz
 ```
 
-Example (1):  Running script only for `.fq.gz` files:
+- Example (1):  Running script only for `.fq.gz` files:
 `$ sh auto_trimmomatic.sh *.fq.gz`
 
-Example (2):  Running script only for `.fq` files:
+- Example (2):  Running script only for `.fq` files:
 `$ sh auto_trimmomatic.sh *.fq`
 
-Example (3):  Running script only for `.fastq` files:
+- Example (3):  Running script only for `.fastq` files:
 `$ sh auto_trimmomatic.sh *.fastq`
 
-Example (4):  Running script only for `.fastq.gz` files:
+- Example (4):  Running script only for `.fastq.gz` files:
 `$ sh auto_trimmomatic.sh *.fastq.gz`
 
-Example (5):  Running script only for all files in the directory:
+- Example (5):  Running script only for all files in the directory:
 `$ sh auto_trimmomatic.sh *`
 
-## Invoking help
+#### Invoking help
 
 `$ sh auto_trimmomatic.sh --help` OR
 
