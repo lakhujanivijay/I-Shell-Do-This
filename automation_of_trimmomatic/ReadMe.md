@@ -15,7 +15,7 @@ The script can be used for running trimmomatic automatically for `N` no.of sampl
 
 #### :triangular_flag_on_post: Why should one use this?  
 
-- This script is directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
+- This script directly works with compressed/uncompressed fastq files exploiting the functionalities of trimmomatic.
 - Obviously, it will save a lot of time as trimming is one of the routine tasks and it ought to be automated.
 - It is robust and intuitive and errors while execution (if any) are self-explanatory as explained below.
 
