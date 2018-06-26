@@ -1,6 +1,6 @@
 ### About the program
 
-This shell script exploits the ultra-fast fasta manipulation tool called [seqkit](http://www.biocodes.org/thread.php?id=15). As argument, the script takes the genome assembly file in fasta format.
+This shell script exploits the ultra-fast fasta manipulation tool called [seqkit](https://bioinf.shenwei.me/seqkit/). As argument, the script takes the genome assembly file in fasta format.
 
 --- 
 
