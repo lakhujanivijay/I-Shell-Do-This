@@ -1,8 +1,10 @@
 ### About the program
 
-This shell script exploits the ultra-fast fasta manipulation tool called [seqkit](http://www.biocodes.org/thread.php?id=15).As arguments, the script takes the assembly file in fasta format.
+This shell script exploits the ultra-fast fasta manipulation tool called [seqkit](http://www.biocodes.org/thread.php?id=15). As argument, the script takes the genome assembly file in fasta format.
 
-The program outputs the following statistical elements:
+--- 
+
+#### The program outputs the following statistical elements:
 
 - num_scaffolds: The total number of [scaffolds](http://genome.jgi.doe.gov/help/scaffolds.html)
 
