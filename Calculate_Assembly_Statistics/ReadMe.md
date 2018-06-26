@@ -6,7 +6,7 @@ This shell script exploits the ultra-fast fasta manipulation tool called [seqkit
 
 #### The program outputs the following statistical elements:
 
-- num_scaffolds: The total number of [scaffolds](http://genome.jgi.doe.gov/help/scaffolds.html)
+- num_scaffolds: The total number of scaffolds.
 
 - num_contigs: The total number of [contigs](https://en.wikipedia.org/wiki/Contig)
 
@@ -18,7 +18,7 @@ This shell script exploits the ultra-fast fasta manipulation tool called [seqkit
 
 - avg_contig_size: Mean of the lengths of the contigs.
 
-- Contig [`N50`](http://www.biocodes.org/thread.php?id=9): Contig `N50` is a weighted median statistic such that `50%` of the entire assembly is contained in contigs equal to or larger than this value.
+- Contig [`N50`](https://github.com/lakhujanivijay/Bioinformatics-Scripts/tree/master/Calculate_N50): Contig `N50` is a weighted median statistic such that `50%` of the entire assembly is contained in contigs equal to or larger than this value.
 
 - Scaffold `N50`: Scaffold `N50` is a weighted median statistic such that `50%` of the entire assembly is contained in scaffolds equal to or larger than this value.
 
