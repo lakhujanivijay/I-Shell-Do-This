@@ -1,4 +1,3 @@
-# Stop before copying the code and take a moment to go through the ReadMe file at below link
 # https://github.com/lakhujanivijay/Shell_scripts/blob/master/README.md
 assembly_file=$1
 stats=`./seqkit stat $assembly_file -j 10 | grep -v "^file"`
