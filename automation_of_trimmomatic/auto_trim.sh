@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Shell script to automate trimmomatic for multiple samples
 # Author = Vijay Lakhujani
