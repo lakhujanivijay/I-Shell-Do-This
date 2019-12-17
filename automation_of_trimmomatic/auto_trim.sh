@@ -10,17 +10,17 @@
 
 # Execution
 # Case(1) run on a couple of PE files with extension *.fq
-# $ sh auto_trim.sh *.fq
+# $ source auto_trim.sh *.fq
 
 # Case(2) run on a couple of PE files with extension *.fq.gz
-# $ sh auto_trim.sh *.fq.gz
+# $ source auto_trim.sh *.fq.gz
 
 # Case(3) run on a all the fastq files in the current directory (mixed extensions, like .fq. .fastq )
-# $ sh auto_trim.sh *
+# $ source auto_trim.sh *
 
 # Invoke help
-# $ sh auto_trim.sh -h
-# $ sh auto_trim.sh --help
+# $ source auto_trim.sh -h
+# $ source auto_trim.sh --help
 # Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
 
 
@@ -33,10 +33,10 @@ count=0
 
 usage ()
 {
-  echo -e "${green}Usage: sh auto_trim [*.extension]\n \
+  echo -e "${green}Usage: source auto_trim.sh [*.extension]\n \
       extension: <fq> or <fastq> or <fq.gz> or <fastq.gz>\n \
-      example: sh auto_trim.sh *.fq.gz\n ${reset}\n\
-${yellow}Help:  sh autotrim -h or --help${reset}"
+      example: source auto_trim.sh *.fq.gz\n ${reset}\n\
+${yellow}Help:  source auto_trim.sh -h or --help${reset}"
   return
 }
 
