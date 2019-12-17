@@ -37,28 +37,28 @@ usage ()
       extension: <fq> or <fastq> or <fq.gz> or <fastq.gz>\n \
       example: sh auto_trim.sh *.fq.gz\n ${reset}\n\
 ${yellow}Help:  sh autotrim -h or --help${reset}"
-  exit
+  return
 }
 
 file_not_found ()
 {
 echo -e "\n${red}FileNotFoundError: No such file with extension $@ found!${reset}"
 echo -e "${green}Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>${reset}\n"
-exit 
+return 
 }
 
 file_name_error ()
 {
 echo -e "\n${red}Filename Error: Paired end file names should contain _R1 _R2${reset}"
 echo -e "${green}Example: test_R1.fq.gz, test_R2.fq.gz${reset}\n"
-exit 
+return 
 }
 
 file_extension_error ()
 {
 echo -e "\n${red}FileExtensionError: Invalid extension${reset}"
 echo -e "${green}Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>${reset}\n"
-exit     
+return     
 }
 
 if [[ ( $1 == '-h' ) || ( $1 == '--help') ]] ;then
@@ -66,7 +66,7 @@ if [[ ( $1 == '-h' ) || ( $1 == '--help') ]] ;then
 elif [[ $# -eq 0 ]] ;then
  echo "${red}Error: No parameter(s) provided${reset}"
  usage
- exit 0
+ return 0
 else
   for i in $@; do
         count=$((count+1))
