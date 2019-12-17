@@ -38,46 +38,46 @@ Consider you have a directory with a mixture of fastq files with different file 
 
 - Example (1):  Running script only for `.fq.gz` files:
 
-  `$ sh auto_trimmomatic.sh *.fq.gz`
+  `$ source auto_trimmomatic.sh *.fq.gz`
 
 - Example (2):  Running script only for `.fq` files:
 
-  `$ sh auto_trimmomatic.sh *.fq`
+  `$ source auto_trimmomatic.sh *.fq`
 
 - Example (3):  Running script only for `.fastq` files:
 
-  `$ sh auto_trimmomatic.sh *.fastq`
+  `$ source auto_trimmomatic.sh *.fastq`
 
 - Example (4):  Running script only for `.fastq.gz` files:
 
-  `$ sh auto_trimmomatic.sh *.fastq.gz`
+  `$ source auto_trimmomatic.sh *.fastq.gz`
 
 - Example (5):  Running script only for all files in the directory:
 
-  `$ sh auto_trimmomatic.sh *`
+  `$ source auto_trimmomatic.sh *`
 
 #### :information_source: Invoking help
 
-`$ sh auto_trimmomatic.sh --help` OR
+`$ source auto_trimmomatic.sh --help` OR
 
-`$ sh auto_trimmomatic.sh -h`
+`$ source auto_trimmomatic.sh -h`
 
 #### :warning: Error handling
 
 - No parameters passed to script
 ```
-[mypc]$ sh auto_trimmomatic.sh 
+[mypc]$ source auto_trimmomatic.sh 
 Error: No parameter(s) provided
 Usage: sh auto_trim [*.extension]
        extension: <fq> or <fastq> or <fq.gz> or <fastq.gz> or <*>
        example: sh auto_trim.sh *.fq.gz or sh auto_trim.sh *
  
-Help:  sh auto_trimmomatic.sh -h or --help
+Help:  source auto_trimmomatic.sh -h or --help
 ```
 
 - No files in the directory with user provided extension
 ```
-[mypc]$ sh auto_trimmomatic.sh *.fq
+[mypc]$ source auto_trimmomatic.sh *.fq
 
 FileNotFoundError: No such file with extension *.fq found!
 Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
@@ -86,7 +86,7 @@ Supported extensions are: <.fq> or <.fastq> or <.fq.gz> or <.fastq.gz>
 - Fastq file names do not have `R1 - R2` naming conventions.
  Say if you have files like these - `demo_1.fq`, `demo_2.fq`, the script will fail:
 ```
-[mypc]$ sh auto_trimmomatic.sh *.fq
+[mypc]$ source auto_trimmomatic.sh *.fq
 
 Filename Error: Paired end file names should contain _R1 _R2
 Example: test_R1.fq.gz, test_R2.fq.gz
